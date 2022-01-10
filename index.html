@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/> <!-- scrollbar I used -->
+    <link rel="stylesheet" href="./main.css">
+    <title>Shingrix</title>
+</head>
+<body>
+    <div class="body"> 
+
+        <div class="header"> <!-- header displaying logos -->
+            <div class="empty">
+                <span></span>
+            </div>
+            
+            <div class="logo" onclick="showConsole1()">
+                <a href="#"><img src="./assets/logo.png" alt="logo shingrix"></a>
+            </div>
+
+            <div class="gsk" onclick="showConsole1()">
+                <a href="#"><img src="./assets/gsk.png" alt="logo gsk"></a>
+            </div>
+        </div>
+
+        <div class="container"> <!-- main container -->
+
+            <div class="slider "> <!-- slider with information about shingrix -->
+        
+                <section class="content active"> <!-- first section  -->
+                    <div class="box-first">
+                        <div class="presentation">
+                            <div class="text1">
+                                <p>SHINGRIX is a vaccine indicated for prevention of herpes</p>
+                                <p>zoster (shingles) in adults aged 50 years and older.</p>
+                            </div>
+                            <div class="text2">
+                                <p>SHINGRIX is not indicated for prevention of primary</p>
+                                <p>varicella infection (chickenpox).</p>
+                            </div>
+                        </div>
+                        
+                        <div class="link1" onclick="showConsole2()">
+                            <a href="#">Prescribing information ></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content"> <!-- second section  -->
+                    <div class="item">
+                        <p>Help ensure</p>
+                        <p>They come back</p>
+                        
+                    </div>
+
+                    <div class="link" onclick="showConsole2()">
+                        <a href="#">Prescribing information ></a>
+                    </div>
+
+                </section>
+                
+                <section class="content"> <!-- third section  -->
+                    <div class="box-vaccines">
+                        <img class="imagen" src="./assets/syringe.png" alt="syringes">
+                        <div class="vaccines">
+                            <div class="text3">
+                                <p>Remind patients to</p>
+                                <p>complete the 2-dose series</p>
+                            </div>
+                            <div class="text4">
+                                <p>The second dose should be administered</p>
+                                <p>2 months after the first dose.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="box-button">
+                        <button class="button" onclick="showConsole()">
+                            <a href="#">learn more ></a>
+                        </button>
+                    </div>
+                    
+                    <div class="link" onclick="showConsole2()">
+                            <a href="#">Prescribing information ></a>
+                    </div>
+
+                </section>
+
+                <section class="content contents" id="scrolling" data-simplebar> <!-- fourth section with scrollbar -->
+                    <div class="scroll">
+                        <p>scroll here</p>
+                    </div>
+                    <div class="paragraphs" >
+                        <p>SHINGRIX is contraindicated in anyone with a history of a severe allergic reaction (eg, anaphylaxis) to any component of the vaccine or after a previous dose of SHINGRIX</p>
+                        <br>
+                        <p>Review immunization history for possible vaccine reactions. Appropriate medical treatment and supervision must be available to manage possible anaphylactic reactions following administration of SHINGRIX</p>
+                        <br>
+                        <p>Solicited local adverse reactions in subjets aged 50 years and older were myalgia (14.7%), fatigue (44.5%), headache (37.7%), shivering (26.8%), fever (20.5%), and gastrointestinal symptoms (17.3%)</p>
+                        <br>    
+                        <p>SHINGRIX was not studied in pregnant or lactating women, and it is unknown if it is excreted in human milk. Therefore, it cannot be established whether there is vaccine-associated risk with SHINGRIX in pregnant women or it there are effects on breastfed infants or milk production/excretion. </p>
+                        <br>
+                        <p>Vaccination with SHINGRIX may not result in protection of all vaccine recipients.</p>
+                        <br>
+                        <p>You are encouraged to report vaccine adverse events to the US Department of Health and Human Services. Visit <a href="#" onclick="showConsole3()">www.vaers.hhs.gov</a> to file a report, or call 1-800-822-7967.</p>
+
+                    </div>    
+                </section>
+
+            </div>
+
+        </div>
+
+        <div class="controls"> <!-- arrows to move the sections -->
+            <div class="left-slide" onclick="prevSlide" ><</div>
+            <div class="right-slide" onclick="nextSlide" >></div>
+        </div>
+        
+    </div>
+
+<script src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+</body>
+</html>

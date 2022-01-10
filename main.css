@@ -1,0 +1,249 @@
+/* MAIN CSS */
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 600px;
+    height: 300px;
+    background-image: url(./assets/background.jpg);
+    border: 1px solid;
+    display: grid;
+    margin: auto;
+}
+
+@font-face {
+    font-family: nolan-bold;
+    src: url(./fonts/Nolan-Bold.woff);
+}
+
+@font-face {
+    font-family: nolan-extrabold;
+    src: url(./fonts/Nolan-ExtraBold.woff);
+}
+
+
+/* HEADER */
+
+.header{
+    margin: 1px 0px 0px 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    bottom: 0; left:0;
+    border-bottom: 40px solid #AE191F;
+    border-right: 40px solid transparent;
+    width: 0;
+}
+
+.empty{
+    width: 65px;
+    height: 7px;
+    position: absolute;
+    background-color: #AE191F;
+    margin-left: 30px;
+}
+
+.gsk{
+    margin-top: 10px;
+}
+
+
+/* CONTAINER */
+
+.container{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.body .left-slide,.body .right-slide{
+    height: 28px;
+    width: 28px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color:#000000;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    margin: 3px;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box .left-slide:hover,.box .right-slide:hover{
+box-shadow: 0px 0px 10px rgb(34, 31, 31);
+background-color: #b82121;
+}
+
+.container .slider .content{
+    display: none;
+    position: relative;
+}
+
+.container .slider .content.active{
+    display: block;
+}
+  
+
+
+/* SECTION 1 */
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px;
+}
+
+.presentation p{
+    font-family: nolan-bold;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+
+.text1{
+    margin-bottom: 15px;
+}
+
+.link1{
+    margin-left: 10px;
+}
+
+.link1 a{
+    color: white;
+    font-family: nolan-bold;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+/* SECTION 2 */
+
+.item{
+    text-align: center;
+}
+.item p{
+    font-family: nolan-extrabold;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 15px;
+    margin: 5px;
+}
+
+
+/* SECTION 3 */
+
+.box-vaccines{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.vaccines{
+    display: flex;
+    flex-direction: column;
+}
+
+.text1{
+    margin-bottom: 5px;
+}
+
+.text3 p{
+    font-family: nolan-extrabold;
+    text-transform: uppercase;  
+    color: white;  
+    font-size: 15px;
+}
+
+.text4 p{
+    font-family: nolan-bold;
+    color: white;
+    font-size: 10px;
+}
+
+.link{
+    margin-left: 10px;
+}
+
+.link a{
+    color: white;
+    font-family: nolan-bold;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.box-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    background-color: white;
+    border: none;
+    padding: 6px;
+    font-family: nolan-extrabold;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 200px;
+}
+
+.button a{
+    text-decoration: none;
+    color: #9e0b11;
+}
+
+/* SECTION 4 */
+
+.contents{
+    background-color: white;
+    height: 175px;
+    margin: 5px 0px;
+}
+
+.scroll{
+    display: flex;
+    justify-content:end;
+    margin: 5px 20px;
+    font-family: nolan-extrabold;
+    text-transform: uppercase;
+    color: #3e3e46;
+}
+
+.paragraphs p{
+    text-align: justify;
+    margin: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #3e3e46;
+}
